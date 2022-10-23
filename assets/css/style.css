@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+}
+
+.container {
+    background-image: url(../images/landpage-2.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    height: 66px;
+    background-color: #546958;
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-elements li {
+    display: inline;
+}
+
+.nav-buttons {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-buttons:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.expand-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-links {
+    display: none;
+    position: absolute;
+    min-width: 30px;
+}
+
+.dropdown-links a {
+    color:white;
+    padding: 10px;
+    display: block;
+    background-color:#546958;
+}
+
+.dropdown-links a:hover {
+    background-color: #445547;
+}
+
+.expand-menu:hover .dropdown-links {
+    display: block;
+}
+
+.container-nav {
+    padding: 20px;
+}
+
+.navigation-logo {
+    height: 45px;
+    width: 80px;
+    padding: 5px;
+    margin: 8px;
+    background-image: url(../images/logo-trial.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#menu {
+    border: solid 1px transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Search box items */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 75%;
+}
+
+.search-container h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.search-container span {
+    color: white;
+    font-weight: bold;
+}
+
+.search-form input[type=text] {
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+}
+
+#submit-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: solid 1px transparent;
+    background-color: #546958;
+}
+
+#submit-btn:hover {
+    background-color: #445547;
+    cursor: pointer;
+}
+
+.search-2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.or-span {
+    padding: 20px;
+}
+
+/* Landing page content */
+
+.content-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 80px;
+}
+
+.content-img {
+    text-align: center;
+}
+
+.content-item {
+    padding: 20px;
+}
+
+.featured {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.featured h2 {
+    padding-bottom: 5px;
+    font-weight: 800;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 30px;
+    gap: 30px;
+    max-width: 100%;
+    overflow: auto;
+    grid-auto-flow:column;
+    margin-bottom: 40px;
+}
+
+#featured-1 {
+    height: 250px;
+    width: 260px;
+    border-radius: 50px;
+    background-image: url(../images/crete.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.feature-text {
+    visibility: hidden;
+    text-align: center;
+    padding: 40% 0 40%;
+    font-size: 1em;
+    color: white;
+    font-weight: 800;
+    font-family: 'Nunito';
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#featured-1:hover #feature-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+#featured-2 {
+    height: 250px;
+    width: 260px;
+    border-radius: 50px;
+    background-image: url(../images/montenegro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#featured-2:hover #feature-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+#featured-3 {
+    height: 250px;
+    width: 260px;
+    border-radius: 50px;
+    background-image: url(../images/cycling2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#featured-3:hover #feature-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+#featured-4 {
+    height: 250px;
+    width: 260px;
+    border-radius: 50px;
+    background-image: url(../images/sailing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#featured-4:hover #feature-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+#featured-5 {
+    height: 250px;
+    width: 260px;
+    border-radius: 50px;
+    background-image: url(../images/scuba.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#featured-5:hover #feature-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+#featured-6 {
+    height: 250px;
+    width: 260px;
+    border-radius: 50px;
+    background-image: url(../images/surfing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#featured-6:hover #feature-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+#featured-7 {
+    height: 250px;
+    width: 260px;
+    border-radius: 50px;
+    background-image: url(../images/granada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#featured-7:hover #feature-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.quote-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 90px;
+    background-color: #F5F5F5;
+}
+
+#quote-text {
+    display: flex;
+    height: 100%;
+    max-width: 90%;
+    justify-content: center;
+    align-items:center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+#quote-img {
+    height: 750px;
+    max-width: 600px;
+    background-image: url(../images/quoteimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    margin-left: 100px;
+}
+
+.review-section {
+    display: flex;
+    padding: 20px;
+    margin-top: 50px;
+    gap: 30px;
+
+}
+
+/* Accommodation page  */
+
+.acc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+.acc-internal-container {
+    width: 50%;
+    text-align: left;
+    font-size: 10px;
+    padding-top: 30px;
+}
+
+.acc-internal-container h1 {
+    font-size: 3em;
+}
+
+.acc-img {
+    height: 460px;
+    padding-top: 15px;
+    border-radius: 50px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    text-align: left;
+    width: 50%;
+    padding: 25px;
+}
+
+.text-container p {
+    font-weight: 200;
+}
+
+
+.booking-container {
+    width: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.price-container {
+    text-align: left;
+    width: 50%;
+    background-color: #F5F5F5;
+}
+
+.price-container h3 {
+    font-size: 3em;
+}
+
+.price-container p {
+    font-size: 1em;
+}
+
+.form-wrapper {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#submit-form {
+    width: 50%;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.booking-form {
+    margin: 10px 0 30px 0;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-wrapper {
+    text-align: center;
+}
+
+#booking-btn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#546958;
+    color: white;
+    border: none;
+    width: 50%;
+}
+
+#booking-btn:hover {
+    background-color: #445547;
+    cursor: pointer;
+}
+
+/* Browse page */
+
+.browse-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px;
+    gap: 20px;
+}
+
+.browse-container-search {
+    display: flex;
+    float: left;
+    width: 100%;
+    padding: 50px;
+    gap: 20px;
+}
+
+.browse-image {
+    height: 350px;
+    width: 350px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.browse-image-search {
+    height: 350px;
+    width: 350px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.browse-image:hover {
+    opacity: 75%;
+}
+
+.browse-item {
+    border-radius: 25px;
+    padding: 20px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+
+#browse-title {
+    font-weight: 600; 
+}
+
+.search-results {
+    padding: 20px 0 0 50px;
+}
+
+
+/* Log in page */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-items {
+    height: 500px;
+    width: 500px;
+    text-align: left;
+    padding-top: 200px;
+}
+
+.login-form input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 10px 0 10px 0;
+}
+
+.login-form button {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #546958;
+    color: white;
+    border: none;
+    width: 25%;
+    margin: 10px 0 5px 0;
+}
+
+.login-form button:hover {
+    background-color: #445547;
+    cursor: pointer;
+}
+
+
+/* Account page */
+
+.account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.review-form form {
+    height: 200px;
+    width: 300px;
+}
+
+.review-form textarea {
+    resize: none;
+    text-align: left;
+    margin: 0;
+}
+
+.account-2 {
+    background-color: #F5F5F5;
+    margin: 20px 20px 20px 0;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+#address {
+    font-weight: 400;
+}
+
+#review-button {
+    padding: 10px;
+    border-radius: 15px;
+    background-color:#445547;
+    color: white;
+    border: none;
+    width: 12%;
+    cursor: pointer;
+}
+
+#review-button:hover {
+    background-color:#546958
+}
+
+
+
+/* Registration page */
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-items {
+    width: 400px;
+    padding: 40px;
+}
+
+.register-form input {
+    padding: 5px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.register-form button {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #546958;
+    color: white;
+    border: none;
+    width: 25%;
+}
+
+.register-form button:hover {
+    background-color: #445547;
+    cursor: pointer;
+}
+
+.register-items h2 {
+    text-align:start;
+}
+
+
+/* Confirmation page */
+
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 100%;
+    margin: 70px 0 70px 0;
+}
+
+.confirmation-background {
+    background-color: #F5F5F5;
+    height: 75%;
+}
+
+.confirmation h1 {
+    padding: 10px 0 5px 0;
+}
+
+.confirmation h3 {
+    padding: 5px;
+}
+
+
+/* Footer */
+
+.footer {
+    left: 0;
+    bottom: 0;
+    height: 230px;
+    background-color: #546958;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer p {
+    text-align: center;
+    color: white;
+}
+
+.footer h2 {
+    color: white;
+    text-align: center;
+}
+
+.footer-icons {
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Credits page */
+
+.credits {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Wireframes */
+
+.wireframes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+ 
+.wireframes-container img {
+    height: 100%;
+    width: 49%;
+    border: 2px solid black;
+}
+
+/* Design notes */
+.design-notes {
+    width: 50%;
+    padding: 30px;
+    text-align: justify;
+}

@@ -1,0 +1,15 @@
+Features list with corresponding page
+- Homepage with navigation area, includes links to wireframes and user interface design notes - index.php
+- Wireframes - wireframes.php
+- Design notes - design.php
+- Customer Registration page (accessible via login.php) - register.php/process_registration.php
+- Holiday accommodation listing page - browse.php
+- Log in page - login.php/process_login.php
+- Individual holiday accommodation page - product_page.php
+- Booking function - product_page.php/confirmation_page.php
+- Display the confirmed booking details - confirmation_page.php
+- Academic security report - security_report.pdf (accessible via downloaded from the nav bar)
+- Credits - credits.php
+- Functions - webFunctions.php
+- Customer account page - account_page.php
+- Leave a review feature - account_page.php/process_review.php
