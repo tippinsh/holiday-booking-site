@@ -1,1 +1,1 @@
-# holiday_booking_site
+# a mock holiday booking site in PHP for a previous university assignment
